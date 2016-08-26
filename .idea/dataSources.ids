@@ -1,0 +1,3668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails mystore: development" uuid="2f0db7fe-55a7-4493-9a76-9e6aed8f7fbd">
+    <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <database-model serializer="dbm" rdbms="SQLITE" format-version="2.6">
+      <schema id="1">
+        <visible>1</visible>
+      </schema>
+      <table id="2" parent="1" name="friendly_id_slugs"/>
+      <table id="3" parent="1" name="schema_migrations"/>
+      <table id="4" parent="1" name="spree_addresses"/>
+      <table id="5" parent="1" name="spree_adjustments"/>
+      <table id="6" parent="1" name="spree_assets"/>
+      <table id="7" parent="1" name="spree_calculators"/>
+      <table id="8" parent="1" name="spree_countries"/>
+      <table id="9" parent="1" name="spree_credit_cards"/>
+      <table id="10" parent="1" name="spree_customer_returns"/>
+      <table id="11" parent="1" name="spree_gateways"/>
+      <table id="12" parent="1" name="spree_inventory_units"/>
+      <table id="13" parent="1" name="spree_line_items"/>
+      <table id="14" parent="1" name="spree_log_entries"/>
+      <table id="15" parent="1" name="spree_option_type_prototypes"/>
+      <table id="16" parent="1" name="spree_option_types"/>
+      <table id="17" parent="1" name="spree_option_value_variants"/>
+      <table id="18" parent="1" name="spree_option_values"/>
+      <table id="19" parent="1" name="spree_order_promotions"/>
+      <table id="20" parent="1" name="spree_orders"/>
+      <table id="21" parent="1" name="spree_payment_capture_events"/>
+      <table id="22" parent="1" name="spree_payment_methods"/>
+      <table id="23" parent="1" name="spree_payments"/>
+      <table id="24" parent="1" name="spree_preferences"/>
+      <table id="25" parent="1" name="spree_prices"/>
+      <table id="26" parent="1" name="spree_product_option_types"/>
+      <table id="27" parent="1" name="spree_product_promotion_rules"/>
+      <table id="28" parent="1" name="spree_product_properties"/>
+      <table id="29" parent="1" name="spree_products"/>
+      <table id="30" parent="1" name="spree_products_taxons"/>
+      <table id="31" parent="1" name="spree_promotion_action_line_items"/>
+      <table id="32" parent="1" name="spree_promotion_actions"/>
+      <table id="33" parent="1" name="spree_promotion_categories"/>
+      <table id="34" parent="1" name="spree_promotion_rule_taxons"/>
+      <table id="35" parent="1" name="spree_promotion_rule_users"/>
+      <table id="36" parent="1" name="spree_promotion_rules"/>
+      <table id="37" parent="1" name="spree_promotions"/>
+      <table id="38" parent="1" name="spree_properties"/>
+      <table id="39" parent="1" name="spree_property_prototypes"/>
+      <table id="40" parent="1" name="spree_prototype_taxons"/>
+      <table id="41" parent="1" name="spree_prototypes"/>
+      <table id="42" parent="1" name="spree_refund_reasons"/>
+      <table id="43" parent="1" name="spree_refunds"/>
+      <table id="44" parent="1" name="spree_reimbursement_credits"/>
+      <table id="45" parent="1" name="spree_reimbursement_types"/>
+      <table id="46" parent="1" name="spree_reimbursements"/>
+      <table id="47" parent="1" name="spree_return_authorization_reasons"/>
+      <table id="48" parent="1" name="spree_return_authorizations"/>
+      <table id="49" parent="1" name="spree_return_items"/>
+      <table id="50" parent="1" name="spree_role_users"/>
+      <table id="51" parent="1" name="spree_roles"/>
+      <table id="52" parent="1" name="spree_shipments"/>
+      <table id="53" parent="1" name="spree_shipping_categories"/>
+      <table id="54" parent="1" name="spree_shipping_method_categories"/>
+      <table id="55" parent="1" name="spree_shipping_method_zones"/>
+      <table id="56" parent="1" name="spree_shipping_methods"/>
+      <table id="57" parent="1" name="spree_shipping_rates"/>
+      <table id="58" parent="1" name="spree_skrill_transactions"/>
+      <table id="59" parent="1" name="spree_state_changes"/>
+      <table id="60" parent="1" name="spree_states"/>
+      <table id="61" parent="1" name="spree_stock_items"/>
+      <table id="62" parent="1" name="spree_stock_locations"/>
+      <table id="63" parent="1" name="spree_stock_movements"/>
+      <table id="64" parent="1" name="spree_stock_transfers"/>
+      <table id="65" parent="1" name="spree_store_credit_categories"/>
+      <table id="66" parent="1" name="spree_store_credit_events"/>
+      <table id="67" parent="1" name="spree_store_credit_types"/>
+      <table id="68" parent="1" name="spree_store_credits"/>
+      <table id="69" parent="1" name="spree_stores"/>
+      <table id="70" parent="1" name="spree_tax_categories"/>
+      <table id="71" parent="1" name="spree_tax_rates"/>
+      <table id="72" parent="1" name="spree_taxonomies"/>
+      <table id="73" parent="1" name="spree_taxons"/>
+      <table id="74" parent="1" name="spree_trackers"/>
+      <table id="75" parent="1" name="spree_users"/>
+      <table id="76" parent="1" name="spree_variants"/>
+      <table id="77" parent="1" name="spree_zone_members"/>
+      <table id="78" parent="1" name="spree_zones"/>
+      <table id="79" parent="1" name="sqlite_sequence"/>
+      <column id="80" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="81" parent="2" name="slug">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="82" parent="2" name="sluggable_id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="83" parent="2" name="sluggable_type">
+        <data-type>VARCHAR(50)(0,-1)|12</data-type>
+      </column>
+      <column id="84" parent="2" name="scope">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="85" parent="2" name="created_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="86" parent="2" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="87" parent="2" name="index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope">
+        <columns>slug
+sluggable_type
+scope</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="88" parent="2" name="index_friendly_id_slugs_on_slug_and_sluggable_type">
+        <columns>slug
+sluggable_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="89" parent="2" name="index_friendly_id_slugs_on_sluggable_id">
+        <columns>sluggable_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="90" parent="2" name="index_friendly_id_slugs_on_sluggable_type">
+        <columns>sluggable_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="91" parent="2" name="index_friendly_id_slugs_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="92" parent="2">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="93" parent="3" name="version">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="94" parent="3" name="unique_schema_migrations">
+        <columns>version</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <column id="95" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="96" parent="4" name="firstname">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="97" parent="4" name="lastname">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="98" parent="4" name="address1">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="99" parent="4" name="address2">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="100" parent="4" name="city">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="101" parent="4" name="zipcode">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="102" parent="4" name="phone">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="103" parent="4" name="state_name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="104" parent="4" name="alternative_phone">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="105" parent="4" name="company">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="106" parent="4" name="state_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="107" parent="4" name="country_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="108" parent="4" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="109" parent="4" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="110" parent="4" name="index_addresses_on_firstname">
+        <columns>firstname</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="111" parent="4" name="index_addresses_on_lastname">
+        <columns>lastname</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="112" parent="4" name="index_spree_addresses_on_state_id">
+        <columns>state_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="113" parent="4" name="index_spree_addresses_on_country_id">
+        <columns>country_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="114" parent="4">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="115" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="116" parent="5" name="source_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="117" parent="5" name="source_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="118" parent="5" name="adjustable_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="119" parent="5" name="adjustable_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="120" parent="5" name="amount">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+      </column>
+      <column id="121" parent="5" name="label">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="122" parent="5" name="mandatory">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+      </column>
+      <column id="123" parent="5" name="eligible">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="124" parent="5" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="125" parent="5" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="126" parent="5" name="state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="127" parent="5" name="order_id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="128" parent="5" name="included">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <index id="129" parent="5" name="index_spree_adjustments_on_source_id_and_source_type">
+        <columns>source_id
+source_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="130" parent="5" name="index_spree_adjustments_on_adjustable_id_and_adjustable_type">
+        <columns>adjustable_id
+adjustable_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="131" parent="5" name="index_spree_adjustments_on_eligible">
+        <columns>eligible</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="132" parent="5" name="index_spree_adjustments_on_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="133" parent="5">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="134" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="135" parent="6" name="viewable_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="136" parent="6" name="viewable_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="137" parent="6" name="attachment_width">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="138" parent="6" name="attachment_height">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="139" parent="6" name="attachment_file_size">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="140" parent="6" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="141" parent="6" name="attachment_content_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="142" parent="6" name="attachment_file_name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="143" parent="6" name="type">
+        <data-type>VARCHAR(75)(0,-1)|12</data-type>
+      </column>
+      <column id="144" parent="6" name="attachment_updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="145" parent="6" name="alt">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="146" parent="6" name="created_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="147" parent="6" name="updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="148" parent="6" name="index_assets_on_viewable_id">
+        <columns>viewable_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="149" parent="6" name="index_assets_on_viewable_type_and_type">
+        <columns>viewable_type
+type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="150" parent="6" name="index_spree_assets_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="151" parent="6">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="152" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="153" parent="7" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="154" parent="7" name="calculable_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="155" parent="7" name="calculable_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="156" parent="7" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="157" parent="7" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="158" parent="7" name="preferences">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="159" parent="7" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="160" parent="7" name="index_spree_calculators_on_id_and_type">
+        <columns>id
+type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="161" parent="7" name="index_spree_calculators_on_calculable_id_and_calculable_type">
+        <columns>calculable_id
+calculable_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="162" parent="7" name="index_spree_calculators_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="163" parent="7">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="164" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="165" parent="8" name="iso_name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="166" parent="8" name="iso">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="167" parent="8" name="iso3">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="168" parent="8" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="169" parent="8" name="numcode">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="170" parent="8" name="states_required">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="171" parent="8" name="updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <key id="172" parent="8">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="173" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="174" parent="9" name="month">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="175" parent="9" name="year">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="176" parent="9" name="cc_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="177" parent="9" name="last_digits">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="178" parent="9" name="address_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="179" parent="9" name="gateway_customer_profile_id">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="180" parent="9" name="gateway_payment_profile_id">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="181" parent="9" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="182" parent="9" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="183" parent="9" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="184" parent="9" name="user_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="185" parent="9" name="payment_method_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="186" parent="9" name="default">
+        <mandatory>1</mandatory>
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <index id="187" parent="9" name="index_spree_credit_cards_on_address_id">
+        <columns>address_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="188" parent="9" name="index_spree_credit_cards_on_user_id">
+        <columns>user_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="189" parent="9" name="index_spree_credit_cards_on_payment_method_id">
+        <columns>payment_method_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="190" parent="9">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="191" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="192" parent="10" name="number">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="193" parent="10" name="stock_location_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="194" parent="10" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="195" parent="10" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <key id="196" parent="10">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="197" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="198" parent="11" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="199" parent="11" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="200" parent="11" name="description">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="201" parent="11" name="active">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="202" parent="11" name="environment">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+        <default-expression>&apos;development&apos;</default-expression>
+      </column>
+      <column id="203" parent="11" name="server">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+        <default-expression>&apos;test&apos;</default-expression>
+      </column>
+      <column id="204" parent="11" name="test_mode">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="205" parent="11" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="206" parent="11" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="207" parent="11" name="preferences">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <index id="208" parent="11" name="index_spree_gateways_on_active">
+        <columns>active</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="209" parent="11" name="index_spree_gateways_on_test_mode">
+        <columns>test_mode</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="210" parent="11">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="211" parent="12" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="212" parent="12" name="state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="213" parent="12" name="variant_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="214" parent="12" name="order_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="215" parent="12" name="shipment_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="216" parent="12" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="217" parent="12" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="218" parent="12" name="pending">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="219" parent="12" name="line_item_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="220" parent="12" name="index_inventory_units_on_variant_id">
+        <columns>variant_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="221" parent="12" name="index_inventory_units_on_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="222" parent="12" name="index_inventory_units_on_shipment_id">
+        <columns>shipment_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="223" parent="12" name="index_spree_inventory_units_on_line_item_id">
+        <columns>line_item_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="224" parent="12">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="225" parent="13" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="226" parent="13" name="variant_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="227" parent="13" name="order_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="228" parent="13" name="quantity">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="229" parent="13" name="price">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+      </column>
+      <column id="230" parent="13" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="231" parent="13" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="232" parent="13" name="currency">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="233" parent="13" name="cost_price">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+      </column>
+      <column id="234" parent="13" name="tax_category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="235" parent="13" name="adjustment_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="236" parent="13" name="additional_tax_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="237" parent="13" name="promo_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="238" parent="13" name="included_tax_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="239" parent="13" name="pre_tax_amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(12,4)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="240" parent="13" name="taxable_adjustment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="241" parent="13" name="non_taxable_adjustment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <index id="242" parent="13" name="index_spree_line_items_on_variant_id">
+        <columns>variant_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="243" parent="13" name="index_spree_line_items_on_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="244" parent="13" name="index_spree_line_items_on_tax_category_id">
+        <columns>tax_category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="245" parent="13">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="246" parent="14" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="247" parent="14" name="source_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="248" parent="14" name="source_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="249" parent="14" name="details">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="250" parent="14" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="251" parent="14" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="252" parent="14" name="index_spree_log_entries_on_source_id_and_source_type">
+        <columns>source_id
+source_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="253" parent="14">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="254" parent="15" name="prototype_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="255" parent="15" name="option_type_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="256" parent="15" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="257" parent="15" name="index_option_types_prototypes_on_prototype_and_option_type">
+        <columns>prototype_id
+option_type_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="258" parent="15" name="index_spree_option_type_prototypes_on_option_type_id">
+        <columns>option_type_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="259" parent="15">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="260" parent="16" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="261" parent="16" name="name">
+        <data-type>VARCHAR(100)(0,-1)|12</data-type>
+      </column>
+      <column id="262" parent="16" name="presentation">
+        <data-type>VARCHAR(100)(0,-1)|12</data-type>
+      </column>
+      <column id="263" parent="16" name="position">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="264" parent="16" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="265" parent="16" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="266" parent="16" name="index_spree_option_types_on_name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="267" parent="16" name="index_spree_option_types_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="268" parent="16">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="269" parent="17" name="variant_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="270" parent="17" name="option_value_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="271" parent="17" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="272" parent="17" name="index_option_values_variants_on_variant_id_and_option_value_id">
+        <columns>variant_id
+option_value_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="273" parent="17" name="index_spree_option_value_variants_on_option_value_id">
+        <columns>option_value_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="274" parent="17">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="275" parent="18" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="276" parent="18" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="277" parent="18" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="278" parent="18" name="presentation">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="279" parent="18" name="option_type_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="280" parent="18" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="281" parent="18" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="282" parent="18" name="index_spree_option_values_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="283" parent="18" name="index_spree_option_values_on_name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="284" parent="18" name="index_spree_option_values_on_option_type_id">
+        <columns>option_type_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="285" parent="18">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="286" parent="19" name="order_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="287" parent="19" name="promotion_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="288" parent="19" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="289" parent="19" name="index_spree_order_promotions_on_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="290" parent="19" name="index_spree_order_promotions_on_promotion_id_and_order_id">
+        <columns>promotion_id
+order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="291" parent="19">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="292" parent="20" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="293" parent="20" name="number">
+        <data-type>VARCHAR(32)(0,-1)|12</data-type>
+      </column>
+      <column id="294" parent="20" name="item_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="295" parent="20" name="total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="296" parent="20" name="state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="297" parent="20" name="adjustment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="298" parent="20" name="user_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="299" parent="20" name="completed_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="300" parent="20" name="bill_address_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="301" parent="20" name="ship_address_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="302" parent="20" name="payment_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="303" parent="20" name="shipment_state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="304" parent="20" name="payment_state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="305" parent="20" name="email">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="306" parent="20" name="special_instructions">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="307" parent="20" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="308" parent="20" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="309" parent="20" name="currency">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="310" parent="20" name="last_ip_address">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="311" parent="20" name="created_by_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="312" parent="20" name="shipment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="313" parent="20" name="additional_tax_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="314" parent="20" name="promo_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="315" parent="20" name="channel">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+        <default-expression>&apos;spree&apos;</default-expression>
+      </column>
+      <column id="316" parent="20" name="included_tax_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="317" parent="20" name="item_count">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="318" parent="20" name="approver_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="319" parent="20" name="approved_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="320" parent="20" name="confirmation_delivered">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="321" parent="20" name="considered_risky">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="322" parent="20" name="guest_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="323" parent="20" name="canceled_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="324" parent="20" name="canceler_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="325" parent="20" name="store_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="326" parent="20" name="state_lock_version">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="327" parent="20" name="taxable_adjustment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="328" parent="20" name="non_taxable_adjustment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <index id="329" parent="20" name="index_spree_orders_on_number">
+        <columns>number</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="330" parent="20" name="index_spree_orders_on_user_id_and_created_by_id">
+        <columns>user_id
+created_by_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="331" parent="20" name="index_spree_orders_on_completed_at">
+        <columns>completed_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="332" parent="20" name="index_spree_orders_on_bill_address_id">
+        <columns>bill_address_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="333" parent="20" name="index_spree_orders_on_ship_address_id">
+        <columns>ship_address_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="334" parent="20" name="index_spree_orders_on_created_by_id">
+        <columns>created_by_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="335" parent="20" name="index_spree_orders_on_approver_id">
+        <columns>approver_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="336" parent="20" name="index_spree_orders_on_confirmation_delivered">
+        <columns>confirmation_delivered</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="337" parent="20" name="index_spree_orders_on_considered_risky">
+        <columns>considered_risky</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="338" parent="20" name="index_spree_orders_on_guest_token">
+        <columns>guest_token</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="339" parent="20" name="index_spree_orders_on_canceler_id">
+        <columns>canceler_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="340" parent="20" name="index_spree_orders_on_store_id">
+        <columns>store_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="341" parent="20">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="342" parent="21" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="343" parent="21" name="amount">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="344" parent="21" name="payment_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="345" parent="21" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="346" parent="21" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="347" parent="21" name="index_spree_payment_capture_events_on_payment_id">
+        <columns>payment_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="348" parent="21">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="349" parent="22" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="350" parent="22" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="351" parent="22" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="352" parent="22" name="description">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="353" parent="22" name="active">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="354" parent="22" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="355" parent="22" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="356" parent="22" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="357" parent="22" name="display_on">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+        <default-expression>&apos;both&apos;</default-expression>
+      </column>
+      <column id="358" parent="22" name="auto_capture">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+      </column>
+      <column id="359" parent="22" name="preferences">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="360" parent="22" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <index id="361" parent="22" name="index_spree_payment_methods_on_id_and_type">
+        <columns>id
+type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="362" parent="22">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="363" parent="23" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="364" parent="23" name="amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="365" parent="23" name="order_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="366" parent="23" name="source_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="367" parent="23" name="source_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="368" parent="23" name="payment_method_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="369" parent="23" name="state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="370" parent="23" name="response_code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="371" parent="23" name="avs_response">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="372" parent="23" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="373" parent="23" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="374" parent="23" name="number">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="375" parent="23" name="cvv_response_code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="376" parent="23" name="cvv_response_message">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="377" parent="23" name="index_spree_payments_on_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="378" parent="23" name="index_spree_payments_on_source_id_and_source_type">
+        <columns>source_id
+source_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="379" parent="23" name="index_spree_payments_on_payment_method_id">
+        <columns>payment_method_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="380" parent="23" name="index_spree_payments_on_number">
+        <columns>number</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="381" parent="23">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="382" parent="24" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="383" parent="24" name="value">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="384" parent="24" name="key">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="385" parent="24" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="386" parent="24" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="387" parent="24" name="index_spree_preferences_on_key">
+        <columns>key</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="388" parent="24">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="389" parent="25" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="390" parent="25" name="variant_id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="391" parent="25" name="amount">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+      </column>
+      <column id="392" parent="25" name="currency">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="393" parent="25" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="394" parent="25" name="index_spree_prices_on_variant_id_and_currency">
+        <columns>variant_id
+currency</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="395" parent="25" name="index_spree_prices_on_variant_id">
+        <columns>variant_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="396" parent="25" name="index_spree_prices_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="397" parent="25">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="398" parent="26" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="399" parent="26" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="400" parent="26" name="product_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="401" parent="26" name="option_type_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="402" parent="26" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="403" parent="26" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="404" parent="26" name="index_spree_product_option_types_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="405" parent="26" name="index_spree_product_option_types_on_product_id">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="406" parent="26" name="index_spree_product_option_types_on_option_type_id">
+        <columns>option_type_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="407" parent="26">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="408" parent="27" name="product_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="409" parent="27" name="promotion_rule_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="410" parent="27" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="411" parent="27" name="index_products_promotion_rules_on_product_id">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="412" parent="27" name="index_products_promotion_rules_on_promotion_rule_and_product">
+        <columns>promotion_rule_id
+product_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="413" parent="27">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="414" parent="28" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="415" parent="28" name="value">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="416" parent="28" name="product_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="417" parent="28" name="property_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="418" parent="28" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="419" parent="28" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="420" parent="28" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <index id="421" parent="28" name="index_product_properties_on_product_id">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="422" parent="28" name="index_spree_product_properties_on_property_id">
+        <columns>property_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="423" parent="28" name="index_spree_product_properties_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="424" parent="28">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="425" parent="29" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="426" parent="29" name="name">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="427" parent="29" name="description">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="428" parent="29" name="available_on">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="429" parent="29" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="430" parent="29" name="slug">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="431" parent="29" name="meta_description">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="432" parent="29" name="meta_keywords">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="433" parent="29" name="tax_category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="434" parent="29" name="shipping_category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="435" parent="29" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="436" parent="29" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="437" parent="29" name="promotionable">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="438" parent="29" name="meta_title">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="439" parent="29" name="discontinue_on">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="440" parent="29" name="index_spree_products_on_name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="441" parent="29" name="index_spree_products_on_available_on">
+        <columns>available_on</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="442" parent="29" name="index_spree_products_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="443" parent="29" name="index_spree_products_on_slug">
+        <columns>slug</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="444" parent="29" name="index_spree_products_on_tax_category_id">
+        <columns>tax_category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="445" parent="29" name="index_spree_products_on_shipping_category_id">
+        <columns>shipping_category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="446" parent="29" name="index_spree_products_on_discontinue_on">
+        <columns>discontinue_on</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="447" parent="29">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="448" parent="30" name="product_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="449" parent="30" name="taxon_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="450" parent="30" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="451" parent="30" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="452" parent="30" name="index_spree_products_taxons_on_product_id">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="453" parent="30" name="index_spree_products_taxons_on_taxon_id">
+        <columns>taxon_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="454" parent="30" name="index_spree_products_taxons_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="455" parent="30">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="456" parent="31" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="457" parent="31" name="promotion_action_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="458" parent="31" name="variant_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="459" parent="31" name="quantity">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>1</default-expression>
+      </column>
+      <index id="460" parent="31" name="index_spree_promotion_action_line_items_on_promotion_action_id">
+        <columns>promotion_action_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="461" parent="31" name="index_spree_promotion_action_line_items_on_variant_id">
+        <columns>variant_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="462" parent="31">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="463" parent="32" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="464" parent="32" name="promotion_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="465" parent="32" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="466" parent="32" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="467" parent="32" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="468" parent="32" name="index_spree_promotion_actions_on_id_and_type">
+        <columns>id
+type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="469" parent="32" name="index_spree_promotion_actions_on_promotion_id">
+        <columns>promotion_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="470" parent="32" name="index_spree_promotion_actions_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="471" parent="32">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="472" parent="33" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="473" parent="33" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="474" parent="33" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="475" parent="33" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="476" parent="33" name="code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <key id="477" parent="33">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="478" parent="34" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="479" parent="34" name="taxon_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="480" parent="34" name="promotion_rule_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="481" parent="34" name="index_spree_promotion_rule_taxons_on_taxon_id">
+        <columns>taxon_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="482" parent="34" name="index_spree_promotion_rule_taxons_on_promotion_rule_id">
+        <columns>promotion_rule_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="483" parent="34">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="484" parent="35" name="user_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="485" parent="35" name="promotion_rule_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="486" parent="35" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="487" parent="35" name="index_promotion_rules_users_on_user_id_and_promotion_rule_id">
+        <columns>user_id
+promotion_rule_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="488" parent="35" name="index_promotion_rules_users_on_promotion_rule_id">
+        <columns>promotion_rule_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="489" parent="35">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="490" parent="36" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="491" parent="36" name="promotion_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="492" parent="36" name="user_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="493" parent="36" name="product_group_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="494" parent="36" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="495" parent="36" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="496" parent="36" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="497" parent="36" name="code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="498" parent="36" name="preferences">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <index id="499" parent="36" name="index_spree_promotion_rules_on_promotion_id">
+        <columns>promotion_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="500" parent="36" name="index_promotion_rules_on_user_id">
+        <columns>user_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="501" parent="36" name="index_promotion_rules_on_product_group_id">
+        <columns>product_group_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="502" parent="36">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="503" parent="37" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="504" parent="37" name="description">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="505" parent="37" name="expires_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="506" parent="37" name="starts_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="507" parent="37" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="508" parent="37" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="509" parent="37" name="usage_limit">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="510" parent="37" name="match_policy">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+        <default-expression>&apos;all&apos;</default-expression>
+      </column>
+      <column id="511" parent="37" name="code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="512" parent="37" name="advertise">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="513" parent="37" name="path">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="514" parent="37" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="515" parent="37" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="516" parent="37" name="promotion_category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="517" parent="37" name="index_spree_promotions_on_id_and_type">
+        <columns>id
+type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="518" parent="37" name="index_spree_promotions_on_expires_at">
+        <columns>expires_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="519" parent="37" name="index_spree_promotions_on_starts_at">
+        <columns>starts_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="520" parent="37" name="index_spree_promotions_on_code">
+        <columns>code</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="521" parent="37" name="index_spree_promotions_on_advertise">
+        <columns>advertise</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="522" parent="37" name="index_spree_promotions_on_promotion_category_id">
+        <columns>promotion_category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="523" parent="37">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="524" parent="38" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="525" parent="38" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="526" parent="38" name="presentation">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="527" parent="38" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="528" parent="38" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="529" parent="38" name="index_spree_properties_on_name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="530" parent="38">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="531" parent="39" name="prototype_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="532" parent="39" name="property_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="533" parent="39" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="534" parent="39" name="index_properties_prototypes_on_prototype_and_property">
+        <columns>prototype_id
+property_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="535" parent="39">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="536" parent="40" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="537" parent="40" name="taxon_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="538" parent="40" name="prototype_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="539" parent="40" name="index_spree_prototype_taxons_on_taxon_id">
+        <columns>taxon_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="540" parent="40" name="index_spree_prototype_taxons_on_prototype_id_and_taxon_id">
+        <columns>prototype_id
+taxon_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="541" parent="40">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="542" parent="41" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="543" parent="41" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="544" parent="41" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="545" parent="41" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <key id="546" parent="41">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="547" parent="42" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="548" parent="42" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="549" parent="42" name="active">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="550" parent="42" name="mutable">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="551" parent="42" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="552" parent="42" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <key id="553" parent="42">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="554" parent="43" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="555" parent="43" name="payment_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="556" parent="43" name="amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="557" parent="43" name="transaction_id">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="558" parent="43" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="559" parent="43" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="560" parent="43" name="refund_reason_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="561" parent="43" name="reimbursement_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="562" parent="43" name="index_refunds_on_refund_reason_id">
+        <columns>refund_reason_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="563" parent="43">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="564" parent="44" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="565" parent="44" name="amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="566" parent="44" name="reimbursement_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="567" parent="44" name="creditable_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="568" parent="44" name="creditable_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <key id="569" parent="44">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="570" parent="45" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="571" parent="45" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="572" parent="45" name="active">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="573" parent="45" name="mutable">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="574" parent="45" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="575" parent="45" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="576" parent="45" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="577" parent="45" name="index_spree_reimbursement_types_on_type">
+        <columns>type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="578" parent="45">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="579" parent="46" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="580" parent="46" name="number">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="581" parent="46" name="reimbursement_status">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="582" parent="46" name="customer_return_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="583" parent="46" name="order_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="584" parent="46" name="total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+      </column>
+      <column id="585" parent="46" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="586" parent="46" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="587" parent="46" name="index_spree_reimbursements_on_customer_return_id">
+        <columns>customer_return_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="588" parent="46" name="index_spree_reimbursements_on_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="589" parent="46">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="590" parent="47" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="591" parent="47" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="592" parent="47" name="active">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="593" parent="47" name="mutable">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="594" parent="47" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="595" parent="47" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <key id="596" parent="47">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="597" parent="48" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="598" parent="48" name="number">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="599" parent="48" name="state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="600" parent="48" name="order_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="601" parent="48" name="memo">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="602" parent="48" name="created_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="603" parent="48" name="updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="604" parent="48" name="stock_location_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="605" parent="48" name="return_authorization_reason_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="606" parent="48" name="index_return_authorizations_on_return_authorization_reason_id">
+        <columns>return_authorization_reason_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="607" parent="48">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="608" parent="49" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="609" parent="49" name="return_authorization_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="610" parent="49" name="inventory_unit_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="611" parent="49" name="exchange_variant_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="612" parent="49" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="613" parent="49" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="614" parent="49" name="pre_tax_amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(12,4)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="615" parent="49" name="included_tax_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(12,4)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="616" parent="49" name="additional_tax_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(12,4)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="617" parent="49" name="reception_status">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="618" parent="49" name="acceptance_status">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="619" parent="49" name="customer_return_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="620" parent="49" name="reimbursement_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="621" parent="49" name="exchange_inventory_unit_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="622" parent="49" name="acceptance_status_errors">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="623" parent="49" name="preferred_reimbursement_type_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="624" parent="49" name="override_reimbursement_type_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="625" parent="49" name="resellable">
+        <mandatory>1</mandatory>
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <index id="626" parent="49" name="index_return_items_on_customer_return_id">
+        <columns>customer_return_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="627" parent="49" name="index_spree_return_items_on_exchange_inventory_unit_id">
+        <columns>exchange_inventory_unit_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="628" parent="49">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="629" parent="50" name="role_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="630" parent="50" name="user_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="631" parent="50" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="632" parent="50" name="index_spree_role_users_on_role_id">
+        <columns>role_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="633" parent="50" name="index_spree_role_users_on_user_id">
+        <columns>user_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="634" parent="50">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="635" parent="51" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="636" parent="51" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="637" parent="51" name="index_spree_roles_on_name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="638" parent="51">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="639" parent="52" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="640" parent="52" name="tracking">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="641" parent="52" name="number">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="642" parent="52" name="cost">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="643" parent="52" name="shipped_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="644" parent="52" name="order_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="645" parent="52" name="address_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="646" parent="52" name="state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="647" parent="52" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="648" parent="52" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="649" parent="52" name="stock_location_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="650" parent="52" name="adjustment_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="651" parent="52" name="additional_tax_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="652" parent="52" name="promo_total">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="653" parent="52" name="included_tax_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="654" parent="52" name="pre_tax_amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(12,4)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="655" parent="52" name="taxable_adjustment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="656" parent="52" name="non_taxable_adjustment_total">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <index id="657" parent="52" name="index_shipments_on_number">
+        <columns>number</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="658" parent="52" name="index_spree_shipments_on_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="659" parent="52" name="index_spree_shipments_on_address_id">
+        <columns>address_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="660" parent="52" name="index_spree_shipments_on_stock_location_id">
+        <columns>stock_location_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="661" parent="52">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="662" parent="53" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="663" parent="53" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="664" parent="53" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="665" parent="53" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="666" parent="53" name="index_spree_shipping_categories_on_name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="667" parent="53">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="668" parent="54" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="669" parent="54" name="shipping_method_id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="670" parent="54" name="shipping_category_id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="671" parent="54" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="672" parent="54" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="673" parent="54" name="index_spree_shipping_method_categories_on_shipping_method_id">
+        <columns>shipping_method_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="674" parent="54" name="unique_spree_shipping_method_categories">
+        <columns>shipping_category_id
+shipping_method_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="675" parent="54">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="676" parent="55" name="shipping_method_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="677" parent="55" name="zone_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="678" parent="55" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <key id="679" parent="55">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="680" parent="56" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="681" parent="56" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="682" parent="56" name="display_on">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="683" parent="56" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="684" parent="56" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="685" parent="56" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="686" parent="56" name="tracking_url">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="687" parent="56" name="admin_name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="688" parent="56" name="tax_category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="689" parent="56" name="code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="690" parent="56" name="index_spree_shipping_methods_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="691" parent="56" name="index_spree_shipping_methods_on_tax_category_id">
+        <columns>tax_category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="692" parent="56">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="693" parent="57" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="694" parent="57" name="shipment_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="695" parent="57" name="shipping_method_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="696" parent="57" name="selected">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="697" parent="57" name="cost">
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="698" parent="57" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="699" parent="57" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="700" parent="57" name="tax_rate_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="701" parent="57" name="spree_shipping_rates_join_index">
+        <columns>shipment_id
+shipping_method_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="702" parent="57" name="index_spree_shipping_rates_on_selected">
+        <columns>selected</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="703" parent="57" name="index_spree_shipping_rates_on_tax_rate_id">
+        <columns>tax_rate_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="704" parent="57">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="705" parent="58" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="706" parent="58" name="email">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="707" parent="58" name="amount">
+        <data-type>FLOAT(0,-1)|6</data-type>
+      </column>
+      <column id="708" parent="58" name="currency">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="709" parent="58" name="transaction_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="710" parent="58" name="customer_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="711" parent="58" name="payment_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="712" parent="58" name="created_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="713" parent="58" name="updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <key id="714" parent="58">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="715" parent="59" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="716" parent="59" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="717" parent="59" name="previous_state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="718" parent="59" name="stateful_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="719" parent="59" name="user_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="720" parent="59" name="stateful_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="721" parent="59" name="next_state">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="722" parent="59" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="723" parent="59" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="724" parent="59" name="index_spree_state_changes_on_stateful_id_and_stateful_type">
+        <columns>stateful_id
+stateful_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="725" parent="59">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="726" parent="60" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="727" parent="60" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="728" parent="60" name="abbr">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="729" parent="60" name="country_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="730" parent="60" name="updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="731" parent="60" name="index_spree_states_on_country_id">
+        <columns>country_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="732" parent="60">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="733" parent="61" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="734" parent="61" name="stock_location_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="735" parent="61" name="variant_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="736" parent="61" name="count_on_hand">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="737" parent="61" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="738" parent="61" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="739" parent="61" name="backorderable">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="740" parent="61" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="741" parent="61" name="stock_item_by_loc_and_var_id">
+        <columns>stock_location_id
+variant_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="742" parent="61" name="index_spree_stock_items_on_variant_id">
+        <columns>variant_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="743" parent="61" name="index_spree_stock_items_on_backorderable">
+        <columns>backorderable</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="744" parent="61" name="index_spree_stock_items_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="745" parent="61">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="746" parent="62" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="747" parent="62" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="748" parent="62" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="749" parent="62" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="750" parent="62" name="default">
+        <mandatory>1</mandatory>
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="751" parent="62" name="address1">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="752" parent="62" name="address2">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="753" parent="62" name="city">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="754" parent="62" name="state_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="755" parent="62" name="state_name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="756" parent="62" name="country_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="757" parent="62" name="zipcode">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="758" parent="62" name="phone">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="759" parent="62" name="active">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="760" parent="62" name="backorderable_default">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="761" parent="62" name="propagate_all_variants">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="762" parent="62" name="admin_name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="763" parent="62" name="index_spree_stock_locations_on_state_id">
+        <columns>state_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="764" parent="62" name="index_spree_stock_locations_on_country_id">
+        <columns>country_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="765" parent="62" name="index_spree_stock_locations_on_active">
+        <columns>active</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="766" parent="62" name="index_spree_stock_locations_on_backorderable_default">
+        <columns>backorderable_default</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="767" parent="62" name="index_spree_stock_locations_on_propagate_all_variants">
+        <columns>propagate_all_variants</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="768" parent="62">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="769" parent="63" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="770" parent="63" name="stock_item_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="771" parent="63" name="quantity">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="772" parent="63" name="action">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="773" parent="63" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="774" parent="63" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="775" parent="63" name="originator_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="776" parent="63" name="originator_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="777" parent="63" name="index_spree_stock_movements_on_stock_item_id">
+        <columns>stock_item_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="778" parent="63">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="779" parent="64" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="780" parent="64" name="type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="781" parent="64" name="reference">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="782" parent="64" name="source_location_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="783" parent="64" name="destination_location_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="784" parent="64" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="785" parent="64" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="786" parent="64" name="number">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="787" parent="64" name="index_spree_stock_transfers_on_source_location_id">
+        <columns>source_location_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="788" parent="64" name="index_spree_stock_transfers_on_destination_location_id">
+        <columns>destination_location_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="789" parent="64" name="index_spree_stock_transfers_on_number">
+        <columns>number</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="790" parent="64">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="791" parent="65" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="792" parent="65" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="793" parent="65" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="794" parent="65" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <key id="795" parent="65">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="796" parent="66" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="797" parent="66" name="store_credit_id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="798" parent="66" name="action">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="799" parent="66" name="amount">
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+      </column>
+      <column id="800" parent="66" name="authorization_code">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="801" parent="66" name="user_total_amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="802" parent="66" name="originator_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="803" parent="66" name="originator_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="804" parent="66" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="805" parent="66" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="806" parent="66" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="807" parent="66" name="index_spree_store_credit_events_on_store_credit_id">
+        <columns>store_credit_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="808" parent="66" name="spree_store_credit_events_originator">
+        <columns>originator_id
+originator_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="809" parent="66">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="810" parent="67" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="811" parent="67" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="812" parent="67" name="priority">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="813" parent="67" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="814" parent="67" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="815" parent="67" name="index_spree_store_credit_types_on_priority">
+        <columns>priority</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="816" parent="67">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="817" parent="68" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="818" parent="68" name="user_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="819" parent="68" name="category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="820" parent="68" name="created_by_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="821" parent="68" name="amount">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="822" parent="68" name="amount_used">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="823" parent="68" name="memo">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="824" parent="68" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="825" parent="68" name="currency">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="826" parent="68" name="amount_authorized">
+        <mandatory>1</mandatory>
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+        <default-expression>0.0</default-expression>
+      </column>
+      <column id="827" parent="68" name="originator_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="828" parent="68" name="originator_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="829" parent="68" name="type_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="830" parent="68" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="831" parent="68" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="832" parent="68" name="index_spree_store_credits_on_user_id">
+        <columns>user_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="833" parent="68" name="index_spree_store_credits_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="834" parent="68" name="spree_store_credits_originator">
+        <columns>originator_id
+originator_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="835" parent="68" name="index_spree_store_credits_on_type_id">
+        <columns>type_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="836" parent="68">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="837" parent="69" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="838" parent="69" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="839" parent="69" name="url">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="840" parent="69" name="meta_description">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="841" parent="69" name="meta_keywords">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="842" parent="69" name="seo_title">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="843" parent="69" name="mail_from_address">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="844" parent="69" name="default_currency">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="845" parent="69" name="code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="846" parent="69" name="default">
+        <mandatory>1</mandatory>
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="847" parent="69" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="848" parent="69" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="849" parent="69" name="index_spree_stores_on_url">
+        <columns>url</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="850" parent="69" name="index_spree_stores_on_code">
+        <columns>code</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="851" parent="69" name="index_spree_stores_on_default">
+        <columns>default</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="852" parent="69">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="853" parent="70" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="854" parent="70" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="855" parent="70" name="description">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="856" parent="70" name="is_default">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="857" parent="70" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="858" parent="70" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="859" parent="70" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="860" parent="70" name="tax_code">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="861" parent="70" name="index_spree_tax_categories_on_is_default">
+        <columns>is_default</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="862" parent="70" name="index_spree_tax_categories_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="863" parent="70">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="864" parent="71" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="865" parent="71" name="amount">
+        <data-type>DECIMAL(8,5)(0,-1)|6</data-type>
+      </column>
+      <column id="866" parent="71" name="zone_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="867" parent="71" name="tax_category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="868" parent="71" name="included_in_price">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="869" parent="71" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="870" parent="71" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="871" parent="71" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="872" parent="71" name="show_rate_in_label">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="873" parent="71" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="874" parent="71" name="index_spree_tax_rates_on_zone_id">
+        <columns>zone_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="875" parent="71" name="index_spree_tax_rates_on_tax_category_id">
+        <columns>tax_category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="876" parent="71" name="index_spree_tax_rates_on_included_in_price">
+        <columns>included_in_price</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="877" parent="71" name="index_spree_tax_rates_on_show_rate_in_label">
+        <columns>show_rate_in_label</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="878" parent="71" name="index_spree_tax_rates_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="879" parent="71">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="880" parent="72" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="881" parent="72" name="name">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="882" parent="72" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="883" parent="72" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="884" parent="72" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <index id="885" parent="72" name="index_spree_taxonomies_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="886" parent="72">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="887" parent="73" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="888" parent="73" name="parent_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="889" parent="73" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="890" parent="73" name="name">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="891" parent="73" name="permalink">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="892" parent="73" name="taxonomy_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="893" parent="73" name="lft">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="894" parent="73" name="rgt">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="895" parent="73" name="icon_file_name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="896" parent="73" name="icon_content_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="897" parent="73" name="icon_file_size">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="898" parent="73" name="icon_updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="899" parent="73" name="description">
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="900" parent="73" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="901" parent="73" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="902" parent="73" name="meta_title">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="903" parent="73" name="meta_description">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="904" parent="73" name="meta_keywords">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="905" parent="73" name="depth">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <index id="906" parent="73" name="index_taxons_on_parent_id">
+        <columns>parent_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="907" parent="73" name="index_spree_taxons_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="908" parent="73" name="index_spree_taxons_on_name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="909" parent="73" name="index_taxons_on_permalink">
+        <columns>permalink</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="910" parent="73" name="index_taxons_on_taxonomy_id">
+        <columns>taxonomy_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="911" parent="73" name="index_spree_taxons_on_lft">
+        <columns>lft</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="912" parent="73" name="index_spree_taxons_on_rgt">
+        <columns>rgt</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="913" parent="73">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="914" parent="74" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="915" parent="74" name="analytics_id">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="916" parent="74" name="active">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="917" parent="74" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="918" parent="74" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="919" parent="74" name="index_spree_trackers_on_active">
+        <columns>active</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="920" parent="74">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="921" parent="75" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="922" parent="75" name="encrypted_password">
+        <data-type>VARCHAR(128)(0,-1)|12</data-type>
+      </column>
+      <column id="923" parent="75" name="password_salt">
+        <data-type>VARCHAR(128)(0,-1)|12</data-type>
+      </column>
+      <column id="924" parent="75" name="email">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="925" parent="75" name="remember_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="926" parent="75" name="persistence_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="927" parent="75" name="reset_password_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="928" parent="75" name="perishable_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="929" parent="75" name="sign_in_count">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="930" parent="75" name="failed_attempts">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="931" parent="75" name="last_request_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="932" parent="75" name="current_sign_in_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="933" parent="75" name="last_sign_in_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="934" parent="75" name="current_sign_in_ip">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="935" parent="75" name="last_sign_in_ip">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="936" parent="75" name="login">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="937" parent="75" name="ship_address_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="938" parent="75" name="bill_address_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="939" parent="75" name="authentication_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="940" parent="75" name="unlock_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="941" parent="75" name="locked_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="942" parent="75" name="reset_password_sent_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="943" parent="75" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="944" parent="75" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="945" parent="75" name="spree_api_key">
+        <data-type>VARCHAR(48)(0,-1)|12</data-type>
+      </column>
+      <column id="946" parent="75" name="remember_created_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="947" parent="75" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="948" parent="75" name="confirmation_token">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="949" parent="75" name="confirmed_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="950" parent="75" name="confirmation_sent_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="951" parent="75" name="email_idx_unique">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="952" parent="75" name="index_spree_users_on_ship_address_id">
+        <columns>ship_address_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="953" parent="75" name="index_spree_users_on_bill_address_id">
+        <columns>bill_address_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="954" parent="75" name="index_spree_users_on_spree_api_key">
+        <columns>spree_api_key</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="955" parent="75" name="index_spree_users_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="956" parent="75">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="957" parent="76" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="958" parent="76" name="sku">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(0,-1)|12</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="959" parent="76" name="weight">
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+        <default-expression>&apos;0.0&apos;</default-expression>
+      </column>
+      <column id="960" parent="76" name="height">
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+      </column>
+      <column id="961" parent="76" name="width">
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+      </column>
+      <column id="962" parent="76" name="depth">
+        <data-type>DECIMAL(8,2)(0,-1)|6</data-type>
+      </column>
+      <column id="963" parent="76" name="deleted_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="964" parent="76" name="is_master">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="965" parent="76" name="product_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="966" parent="76" name="cost_price">
+        <data-type>DECIMAL(10,2)(0,-1)|6</data-type>
+      </column>
+      <column id="967" parent="76" name="position">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="968" parent="76" name="cost_currency">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="969" parent="76" name="track_inventory">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;t&apos;</default-expression>
+      </column>
+      <column id="970" parent="76" name="tax_category_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="971" parent="76" name="updated_at">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="972" parent="76" name="stock_items_count">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="973" parent="76" name="discontinue_on">
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="974" parent="76" name="index_spree_variants_on_sku">
+        <columns>sku</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="975" parent="76" name="index_spree_variants_on_deleted_at">
+        <columns>deleted_at</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="976" parent="76" name="index_spree_variants_on_is_master">
+        <columns>is_master</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="977" parent="76" name="index_spree_variants_on_product_id">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="978" parent="76" name="index_spree_variants_on_position">
+        <columns>position</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="979" parent="76" name="index_spree_variants_on_track_inventory">
+        <columns>track_inventory</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="980" parent="76" name="index_spree_variants_on_tax_category_id">
+        <columns>tax_category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="981" parent="76" name="index_spree_variants_on_discontinue_on">
+        <columns>discontinue_on</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="982" parent="76">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="983" parent="77" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="984" parent="77" name="zoneable_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="985" parent="77" name="zoneable_type">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="986" parent="77" name="zone_id">
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="987" parent="77" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="988" parent="77" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <index id="989" parent="77" name="index_spree_zone_members_on_zoneable_id_and_zoneable_type">
+        <columns>zoneable_id
+zoneable_type</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="990" parent="77" name="index_spree_zone_members_on_zone_id">
+        <columns>zone_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="991" parent="77">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="992" parent="78" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="993" parent="78" name="name">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="994" parent="78" name="description">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <column id="995" parent="78" name="default_tax">
+        <data-type>BOOLEAN(0,-1)|4</data-type>
+        <default-expression>&apos;f&apos;</default-expression>
+      </column>
+      <column id="996" parent="78" name="zone_members_count">
+        <data-type>INTEGER(0,-1)|4</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="997" parent="78" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="998" parent="78" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>DATETIME(0,-1)|12</data-type>
+      </column>
+      <column id="999" parent="78" name="kind">
+        <data-type>VARCHAR(0,-1)|12</data-type>
+      </column>
+      <index id="1000" parent="78" name="index_spree_zones_on_default_tax">
+        <columns>default_tax</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="1001" parent="78" name="index_spree_zones_on_kind">
+        <columns>kind</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="1002" parent="78">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="1003" parent="79" name="name">
+        <data-type>(0,-1)|12</data-type>
+      </column>
+      <column id="1004" parent="79" name="seq">
+        <data-type>(0,-1)|12</data-type>
+      </column>
+    </database-model>
+  </data-source>
+</component>
