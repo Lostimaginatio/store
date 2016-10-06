@@ -1,0 +1,11 @@
+@import "../common/variables";
+
+#sidebar_products_search {
+  .list-group-item {
+    @extend .list-group-item-base;
+  }
+  .btn-primary {
+    font-size: 20px;
+  }
+  padding-bottom: 20px;
+}

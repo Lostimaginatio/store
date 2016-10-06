@@ -1,0 +1,41 @@
+@import "../common/variables";
+
+header {
+  #logo {
+    img {
+      height: 100px;
+      width: 130px !important;
+      @media screen and (max-width: 998px) {
+        display: none;
+      }
+    }
+  }
+
+  #main-nav-bar {
+    @media screen and (min-width: 998px) {
+      position: relative;
+      top: 50px;
+    }
+    a {
+      &:hover {
+        background: rgba($color2, 0.2) !important;
+      }
+    }
+  }
+
+  .company-name {
+    color: $color1;
+    font-size: 22px;
+  }
+  .company-phone {
+    color: $color1;
+    font-size: 35px;
+    position: relative;
+    @media screen and (min-width: 998px) {
+      position: relative;
+      top: 50px;
+    }
+  }
+
+}
+

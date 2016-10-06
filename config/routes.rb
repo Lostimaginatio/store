@@ -7,6 +7,21 @@ Rails.application.routes.draw do
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
   mount Spree::Core::Engine, at: '/'
           # The priority is based upon order of creation: first created -> highest priority.
+
+  # Spree::Core::Engine.routes.prepend do
+  #    get '/about', :to => 'pages#about', :as => :about_us
+  #    get '/info', :to => 'pages#info', :as => :info
+  #    get '/contacts', :to => 'pages#contacts', :as => :contacts
+  # end
+
+  Spree::Core::Engine.routes.append do
+    # match 'some-path' => 'some-controller#show', :as => :some_routename
+    # get '/other-path' => 'other-controller#new', :as => :other_routename
+    get '/about', :to => 'pages#about', :as => :about_us
+    get '/info', :to => 'pages#info', :as => :info
+    get '/contacts', :to => 'pages#contacts', :as => :contacts
+  end
+
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
