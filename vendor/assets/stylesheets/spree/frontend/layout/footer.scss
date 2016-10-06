@@ -1,0 +1,9 @@
+@import "../common/variables";
+#footer {
+  min-height: 100px;
+  background: $color3;
+  padding: 20px 0;
+  p {
+    color: darken($color1, 10);
+  }
+}

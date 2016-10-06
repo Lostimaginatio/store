@@ -1,0 +1,21 @@
+@import "variables";
+
+select, input {
+  border-radius: 0 !important;
+  &:focus {
+    border-color: $color5 !important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($color5, 0.4) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($color5, 0.4) !important;
+  }
+}
+.btn-success, .btn-primary {
+  background: $color5 !important;
+  border-color: darken($color5, 5) !important;
+  &:active, &:hover {
+    background: darken($color5, 5) !important;
+    border-color: darken($color5, 10) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+}

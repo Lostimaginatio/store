@@ -1,0 +1,7 @@
+@import "../common/variables";
+
+#taxonomies {
+  .list-group-item {
+    @extend .list-group-item-base;
+  }
+}

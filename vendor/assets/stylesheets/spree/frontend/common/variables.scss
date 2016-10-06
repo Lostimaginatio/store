@@ -1,0 +1,23 @@
+// Colors
+$color1: rgba(255, 255, 255, 1);
+$color2: rgba(0, 23, 31, 1);
+$color3: rgba(0, 52, 89, 1);
+$color4: rgba(0, 126, 167, 1);
+$color5: rgba(0, 168, 232, 1);
+
+// Parents
+.list-group-item-base {
+    &:first-child {
+      border-radius: 0 !important;
+    }
+    &:last-child {
+      border-radius: 0 !important;
+    }
+    &:hover {
+      background-color: rgba(249, 244, 248, 0.72);
+    }
+    &.active {
+      background: $color5 !important;
+      border-color: darken($color5, 5) !important;
+    }
+}
