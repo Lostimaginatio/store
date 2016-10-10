@@ -6,12 +6,13 @@ class ProductGrid
     Spree::Product
   end
 
-  # filter(:id, :integer)
-  # filter(:created_at, :date, :range => true)
+  filter(:id, :integer)
+  filter(:created_at, :date, :range => true)
 
   column(:id)
   column(:name)
-  # column(:created_at) do |model|
-  #   model.created_at.to_date
-  # end
+
+  column(:count, header: 'Количество в корзине', :html => true) do |count|
+    render :partial => "grid/count_form", :object => count
+  end
 end
