@@ -1,0 +1,6 @@
+<% id = test.attributes["id"].to_s %>
+<%= form_tag({controller: "home", action: "index"}, method: "post", id: "product_count_form_#{id}") do %>
+  <a href="javascript:void(0)" class="count-link" data-order-operation="minus">-</a>
+  <%= text_field("Product", "count", {"id" => "product_#{id}", "data-product-id" => id}) %>
+  <a href="javascript:void(0)" class="count-link" data-order-operation="plus">+</a>
+<% end %>
