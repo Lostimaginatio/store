@@ -11,10 +11,7 @@ class ProductGrid
 
   column(:id)
   column(:name)
-  column(:created_at) do |model|
-    model.created_at.to_date
-  end
-  column(:test, header: 'Test', :html => true) do |product|
-    render :partial => "grid/test", :object => product
+  column(:count, header: 'Количество в корзине', :html => true) do |count|
+    render :partial => "grid/count_form", :object => count
   end
 end
