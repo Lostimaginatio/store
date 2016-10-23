@@ -20,6 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 ru:
+  datagrid:
+    form:
+      search: "Применить"
+      reset: "Сбросить фильтры"
+    table:
+      order:
+        asc: '<span class="glyphicon glyphicon-sort-by-attributes"></span>'
+        desc: '<span class="glyphicon glyphicon-sort-by-attributes-alt"></span>'
   spree:
     please_enter_reasonable_quantity: "Пожалуйста, введите разумном количестве"
     update_item: "Произошла ошибка при обновлении позиции в корзине"

@@ -6,11 +6,19 @@ class ProductGrid
     Spree::Product
   end
 
-  filter(:id, :integer)
-  filter(:created_at, :date, :range => true)
+  filter(:name, :string, header: 'Наименование товара') do |value, scope|
+    scope.where("name like '%#{value}%'")
+  end
+  filter(:sku, :string, header: 'Код товара') do |value, scope|
+    scope.where("sku like '%#{value}%'")
+  end
+  filter(:price, :integer, range: true, header: 'Цена, руб.')
 
-  column(:id)
-  column(:name)
+  column(:name, header: 'Наименование товара', :html => true) do |product|
+    link_to product.name, spree.product_url(product.id, @taxon.try(:id))
+  end
+  column(:sku, header: 'Код товара')
+  column(:price, :order => "price", header: 'Цена, руб.')
 
   column(:count, header: 'Количество в корзине', :html => true) do |count|
     render :partial => "grid/count_form", :object => count

@@ -1,3 +1,71 @@
+// Стили для таблицы товаров
+
+.datagrid-form{
+  input{
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    color: #455863;
+    border: 1px solid #cdd9e6;
+    outline: none;
+    &[type="submit"]{
+      width: auto;
+      padding: 7px 15px;
+      margin-left: 15px;
+    }
+  }
+  .form-group{
+    margin-bottom: 15px;
+  }
+  .form-group:nth-child(even){
+    margin-left: 15px;
+  }
+  .form-control{
+    margin-left: 10px;
+  }
+}
+.datagrid{
+  width: 100%;
+  &>tbody{
+    &>tr{
+      margin: 0;
+      background: #fff;
+      border-bottom: 1px solid #fff;
+      cursor: pointer;
+      -moz-transition: background 0.5s ease;
+      -o-transition: background 0.5s ease;
+      -webkit-transition: background 0.5s ease;
+      -ms-transition: background 0.5s ease;
+      transition: background 0.5s ease;
+      overflow: hidden;
+    }
+    &>tr:nth-child(even) {
+      background: #F3F3F3;
+    }
+    &>tr:hover {
+      background-color: #DDE2E8 !important;
+    }
+  }
+  .quantity-button{
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .quantity-input{
+    vertical-align: middle;
+    width: 35px;
+    height: 20px;
+    margin: 0 3px;
+    padding: 1px 5px;
+    background: #fff;
+    color: #455863;
+    border: 1px solid #cdd9e6;
+    outline: none;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+  }
+}
+
 #gridorder-cart{
   position: fixed;
   right: -9999px;
