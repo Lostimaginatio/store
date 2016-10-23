@@ -49,11 +49,16 @@
         $(document).on('click.ss.gridorder', form+' '+button, $.proxy(this.click, this));
     };
 
-    GridOrder.prototype.VERSION = '0.0.1';
+    GridOrder.prototype.VERSION = '0.1.0';
 
     GridOrder.prototype.init = function () {
         this.loadItems();
         this.initCart();
+
+        $(form).submit(function(e){
+            $(this).find(input).blur();
+            e.preventDefault();
+        })
     };
 
     GridOrder.prototype.loadItems = function() {
