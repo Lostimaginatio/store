@@ -49,7 +49,7 @@
         $(document).on('click.ss.gridorder', form+' '+button, $.proxy(this.click, this));
     };
 
-    GridOrder.prototype.VERSION = '0.1.0';
+    GridOrder.prototype.VERSION = '0.0.3';
 
     GridOrder.prototype.init = function () {
         this.loadItems();
@@ -135,7 +135,7 @@
     };
 
     GridOrder.prototype.click = function (event) {
-        var $this = $(event.target);
+        var $this = $(event.target).closest(button);
         var $input = $this.siblings(input);
         var method = $this.data('gridorder-method');
         $input.val(function(i, v){
