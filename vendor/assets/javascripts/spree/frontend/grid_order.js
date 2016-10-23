@@ -6,40 +6,22 @@
     var input = '[name="quantity"]';
     var button = '.quantity-button';
     var cartSelector = '#gridorder-cart';
+    var spreeCartId = '#link-to-cart';
 
     function _success(d) {
         if (d.success === 1) {
             this.items = d.order_items;
             this.order = d.order;
             this.triggerCart();
+            this.updateCart();
+
+            if (this.initState) {
+                this.updateInputs();
+                this.initState = false;
+            }
         } else {
             GridOrder.prototype.showError(d.error)
         }
-    }
-
-    function _getScrollbarWidth() {
-        var outer = document.createElement("div");
-        outer.style.visibility = "hidden";
-        outer.style.width = "100px";
-        outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
-
-        document.body.appendChild(outer);
-
-        var widthNoScroll = outer.offsetWidth;
-        // force scrollbars
-        outer.style.overflow = "scroll";
-
-        // add innerdiv
-        var inner = document.createElement("div");
-        inner.style.width = "100%";
-        outer.appendChild(inner);
-
-        var widthWithScroll = inner.offsetWidth;
-
-        // remove divs
-        outer.parentNode.removeChild(outer);
-
-        return widthNoScroll - widthWithScroll;
     }
 
     var GET_ORDER_AJAX_SETTINGS = {
@@ -54,11 +36,12 @@
 
     var GridOrder = function()
     {
+        this.initState = true;
         this.items = [];
         this.order = {};
         this.cartShown = false;
         this.$cart = null;
-        this.scrollbarWidth = _getScrollbarWidth();
+        this.clickTimeout = null;
 
         this.init();
 
@@ -71,7 +54,6 @@
     GridOrder.prototype.init = function () {
         this.loadItems();
         this.initCart();
-        this.updateInputs();
     };
 
     GridOrder.prototype.loadItems = function() {
@@ -79,7 +61,13 @@
     };
 
     GridOrder.prototype.updateInputs = function() {
-
+        var self = this;
+        if (this.items.length === 0) return;
+        $(form).each(function(){
+            var id = $(this).find('[name="variant_id"]').val();
+            var itemObj = self.items.find(function(o){return o.variant_id === parseInt(id)});
+            if (typeof itemObj == 'object' && itemObj.quantity) $(this).find(input).val(itemObj.quantity);
+        });
     };
 
     GridOrder.prototype.initCart = function()
@@ -87,7 +75,7 @@
         var $cart = $('<div>', {
             id: cartSelector.substring(1)
         }).html(
-            '<a class="cart-info full" href="/cart"><span class="glyphicon glyphicon-shopping-cart">'
+            '<a class="cart-info" href="/cart"><span class="glyphicon glyphicon-shopping-cart">'
         );
 
         $('body').append($cart);
@@ -123,13 +111,22 @@
         var type = settings.type || 'post';
         var success = settings.success || _success;
         data = data || null;
-        $.ajax({
-            url: settings.url,
-            type: type,
-            data: data,
-            context: that,
-            success: success
-        });
+
+        var timeout = (settings.url == ADD_ITEM_AJAX_SETTINGS.url) ? 350 : 200;
+
+        if (this.clickTimeout) {
+            clearTimeout(this.clickTimeout);
+        }
+
+        this.clickTimeout = setTimeout(function(){
+            $.ajax({
+                url: settings.url,
+                type: type,
+                data: data,
+                context: that,
+                success: success
+            })
+        }, timeout);
     };
 
     GridOrder.prototype.click = function (event) {
@@ -152,6 +149,20 @@
             this.$cart.animate({right: -this.$cart.outerWidth()}, 300);
             this.cartShown = false;
         }
+    };
+
+    GridOrder.prototype.updateCart = function() {
+        var $spreeCart = $(spreeCartId);
+        var quantity = this.order.item_count || 'пусто';
+        var amount = this.order.item_total !== '0.0' ? this.order.item_total : '';
+        var currency = amount !== '' ? this.order.currency : '';
+
+        $spreeCart.find('.cart-info').html(
+            '<span class="glyphicon glyphicon-shopping-cart"></span>' +
+            ' Корзина: ('+quantity+')  <span class="amount">'+amount+' '+currency+'</span></a>'
+        ).addClass(function(){
+            return quantity == 'пусто' ? 'full' : 'empty';
+        }).toggleClass('full empty');
     };
 
     $.fn.gridorder = function()

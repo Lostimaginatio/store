@@ -51,7 +51,7 @@ module Spree
     def response_json (order, error = nil)
       if error.nil?
         {:success => 1, :order_items => order.line_items.as_json(:only => [:id, :variant_id, :quantity]),
-         :order => order.as_json(:only => [:number, :item_total, :item_count])}
+         :order => order.as_json(:only => [:number, :item_total, :item_count, :currency])}
       else
         {:success => 0, :error => error}
       end
