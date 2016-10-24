@@ -21,6 +21,7 @@
 
 ru:
   datagrid:
+    no_results: "Ничего не найдено"
     form:
       search: "Применить"
       reset: "сбросить фильтры"
