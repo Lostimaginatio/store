@@ -1,9 +1,11 @@
 @import "../common/variables";
 #footer {
+  margin-top: 70px;
   min-height: 100px;
   background: $color3;
   padding: 20px 0;
   p {
-    color: darken($color1, 10);
+    color: darken($color1, 5);
+    font-size: 14px;
   }
 }

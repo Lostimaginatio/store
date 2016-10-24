@@ -17,12 +17,13 @@ Rails.application.routes.draw do
   Spree::Core::Engine.routes.append do
     # match 'some-path' => 'some-controller#show', :as => :some_routename
     # get '/other-path' => 'other-controller#new', :as => :other_routename
-    # get '/about', :to => 'pages#about', :as => :about_us
+    # get '/about', :to => 'pages#about', :as => :about
     # get '/info', :to => 'pages#info', :as => :info
     # get '/contacts', :to => 'pages#contacts', :as => :contacts
     post '/ajax/order_items', :to => 'ajax#order_items'
     post '/ajax/update_item', :to => 'ajax#update'
     post '/ajax/add_item', :to => 'ajax#populate'
+
   end
 
   # See how all your routes lay out with "rake routes".
