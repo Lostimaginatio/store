@@ -9,7 +9,7 @@ select, input {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($color5, 0.4) !important;
   }
 }
-.btn-success, .btn-primary {
+.btn-success {
   background: $color5 !important;
   border-color: darken($color5, 5) !important;
   &:active, &:hover {
@@ -18,4 +18,7 @@ select, input {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
+}
+.btn {
+  border-radius: 0 !important;
 }

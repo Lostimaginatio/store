@@ -1,0 +1,22 @@
+@import "../common/variables";
+
+#product-images {
+  #main-image, img {
+    border-radius: 0;
+  }
+}
+#taxon-crumbs {
+  li {
+    border-radius: 0 !important;
+  }
+}
+#product-description {
+  .well {
+    border-radius: 0 !important;
+    background-color: rgba($color5, 0.1);
+    border-color: rgba($color5, 0.15);
+  }
+}
+#product-properties {
+  border: 1px solid #e0e0e0;
+}

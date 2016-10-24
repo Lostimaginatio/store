@@ -1,0 +1,24 @@
+@import "../common/variables";
+
+#cart-detail {
+  th {
+    background-color: $color3;
+    border-bottom: 2px solid darken($color3, 5);
+    color: $color1;
+  }
+  .cart-total {
+    td {
+      background: #f3f3f3;
+      color: $color2;
+    }
+  }
+  > tbody + tbody {
+    border-top: 2px solid #eeeeee;
+  }
+}
+
+#update-cart {
+  .btn {
+    border-radius: 0 !important;
+  }
+}
