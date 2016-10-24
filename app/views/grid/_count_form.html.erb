@@ -1,0 +1,11 @@
+<% id = count_form.attributes["id"] %>
+<%= form_tag('/orders/populate', method: "post", id: "product_form_#{id}", class: "product-form", "data-form" => "gridorder") do %>
+    <%= hidden_field_tag("variant_id", id, {:id => "product_#{id}"}) %>
+    <a href="javascript:void(0);" class="quantity-button" data-gridorder-method="minus">
+      <span class="glyphicon glyphicon-minus"></span>
+    </a>
+    <%= text_field_tag("quantity", 0, {:id => "product_#{id}_quantity", :class => "quantity-input"}) %>
+    <a href="javascript:void(0);" class="quantity-button" data-gridorder-method="plus">
+      <span class="glyphicon glyphicon-plus"></span>
+    </a>
+<% end %>

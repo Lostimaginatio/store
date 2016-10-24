@@ -20,5 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 ru:
+  datagrid:
+    form:
+      search: "Применить"
+      reset: "сбросить фильтры"
+    table:
+      order:
+        asc: '<span class="glyphicon glyphicon-sort-by-attributes"></span>'
+        desc: '<span class="glyphicon glyphicon-sort-by-attributes-alt"></span>'
   spree:
-    search_results: "Где мой член?"
+    please_enter_reasonable_quantity: "Пожалуйста, введите разумном количестве"
+    update_item: "Произошла ошибка при обновлении позиции в корзине"
+    create_item: "Произошла ошибка при добавлении позиции в корзину"

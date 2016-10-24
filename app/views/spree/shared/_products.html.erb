@@ -1,2 +1,26 @@
-<%= datagrid_form_for products, url: '/' %>
+<%= form_for products, :method => :get, :url => request.path,
+             :html => {:class => 'form-inline datagrid-form'} do |f| %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="form-group">
+          <%= f.datagrid_label :name %>
+          <%= f.datagrid_filter :name, :class => 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.datagrid_label :sku %>
+          <%= f.datagrid_filter :sku, :class => 'form-control' %>
+        </div>
+        <div class="form-group form-group_price">
+          <%= f.datagrid_label :price %>
+          <%= f.datagrid_filter :price, :class => 'form-control' %>
+        </div>
+        <div class="form-group pull-right">
+          <%= link_to(I18n.t('datagrid.form.reset'), request.path, id: 'filter-empty') %>
+          <%= f.submit(I18n.t('datagrid.form.search')) %>
+        </div>
+      </div>
+    </div>
+<% end %>
+
 <%= datagrid_table(products) %>
+<%= paginate products.assets %>
