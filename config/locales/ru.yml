@@ -23,7 +23,7 @@ ru:
   datagrid:
     form:
       search: "Применить"
-      reset: "Сбросить фильтры"
+      reset: "сбросить фильтры"
     table:
       order:
         asc: '<span class="glyphicon glyphicon-sort-by-attributes"></span>'
