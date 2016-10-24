@@ -33,3 +33,7 @@ ru:
     please_enter_reasonable_quantity: "Пожалуйста, введите разумном количестве"
     update_item: "Произошла ошибка при обновлении позиции в корзине"
     create_item: "Произошла ошибка при добавлении позиции в корзину"
+    suppliers: "Поставщики"
+    customer_returns: "Запросы на возврат"
+    store_credit_categor: "Store credit categories"
+    administration: "Панель администрирования"
