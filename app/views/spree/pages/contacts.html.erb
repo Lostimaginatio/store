@@ -1,1 +1,28 @@
-contacts page
+<div id="map" style="width: 100%; height:400px"></div>
+<script src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script>
+  var myMap;
+  ymaps.ready(init);
+  function init () {
+    myMap = new ymaps.Map('map', {
+      center:[48.715377, 44.522161],
+      zoom:10
+    });
+    myMap.controls
+        .add('zoomControl', { left: 5, top: 5 })
+        .add('typeSelector')
+        .add('mapTools', { left: 35, top: 5 });
+    myMap.geoObjects.add(new ymaps.Placemark([48.715377, 44.522161], {
+      balloonContent: 'ООО "Бетар-волга", главный офис'
+    }));
+  }
+</script>
+
+<div class="container-fluid contacts-block">
+    <h4><b>Наш адрес:</b></h4>
+    <p>г. Волгоград, ул. Пушкина, 10 офис 24</p>
+    <h4><b>Телефон:</b></h4>
+    <p>8 (800) 700-00-94</p>
+    <h4><b>Электронная почта:</b></h4>
+    <p>betar@volga.ru</p>
+</div>
