@@ -1,6 +1,6 @@
 module Spree
 
-  class PagesController < Spree::StoreController
+  class StaticPagesController < Spree::StoreController
     def about
     end
 
