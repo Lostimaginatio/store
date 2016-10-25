@@ -1,4 +1,4 @@
-<% id = count_form.attributes["id"] %>
+<% id = count_form.master.id %>
 <%= form_tag('/orders/populate', method: "post", id: "product_form_#{id}", class: "product-form", "data-form" => "gridorder") do %>
     <%= hidden_field_tag("variant_id", id, {:id => "product_#{id}"}) %>
     <a href="javascript:void(0);" class="quantity-button" data-gridorder-method="minus">
