@@ -41,3 +41,12 @@ ru:
     info: "Инфо"
     contacts: "Контакты"
     home: "Главная"
+  devise:
+    sessions:
+      spree_user:
+        signed_out: 'До свидания'
+    failure:
+      already_authenticated: 'Вы уже вошли'
+    registrations:
+      spree_user:
+        signed_up: 'Добро пожаловать'
