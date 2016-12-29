@@ -41,6 +41,8 @@ ru:
     info: "Инфо"
     contacts: "Контакты"
     home: "Главная"
+    login: "Войти"
+    signup: "Зарегистрироваться"
   devise:
     sessions:
       spree_user:

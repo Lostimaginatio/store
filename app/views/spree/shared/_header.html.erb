@@ -28,7 +28,26 @@
             </ul>
           </div>
         </nav>
-        <div class="col-md-4 company-phone">8 800 700-00-94</div>
+        <div class="col-md-4">
+            <div class="row company-phone">8 800 700-00-94</div>
+            <div class="row auth-info">
+              <% if spree_current_user %>
+                  <span>
+                    <%= link_to Spree.t(:account), account_path %>
+                  </span>
+                  <span>
+                    <%= link_to Spree.t(:logout), spree_logout_path%>
+                  </span>
+              <% else %>
+                  <span>
+                    <%= link_to Spree.t(:login), spree_login_path %>
+                  </span>
+                  <span>
+                    <%= link_to Spree.t(:signup), spree_signup_path %>
+                  </span>
+              <% end %>
+            </div>
+        </div>
       </div>
     </div>
   </header>
