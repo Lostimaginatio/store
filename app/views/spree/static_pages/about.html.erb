@@ -1,15 +1,4 @@
 <div class="container-fluid about-block">
   <%= image_tag 'business2.jpg' %>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta fermentum magna et pharetra. Pellentesque lorem diam, tincidunt sed tortor at, convallis ullamcorper augue. Proin ultrices mi lacus, ut consequat tellus maximus vel. Aliquam in suscipit ex, iaculis pretium nibh. Morbi eu molestie odio, sed rutrum tellus. Vestibulum pretium fermentum venenatis. Pellentesque faucibus placerat mauris quis varius.
-  </p>
-  <p>
-    Quisque maximus laoreet viverra. Cras at ultricies neque. Nulla blandit nulla ante. Phasellus libero ex, pulvinar vitae velit ac, faucibus laoreet felis. Cras cursus non lectus nec posuere. Vestibulum pellentesque, lacus tristique rhoncus mollis, quam odio aliquam risus, et placerat sem purus et eros. Vestibulum volutpat sit amet lectus eget ornare. Ut sed efficitur sem. Nullam pharetra sodales laoreet. Aenean scelerisque sapien sed ligula sollicitudin ornare vel vitae arcu. Nunc sem leo, posuere id tristique sit amet, eleifend in libero. Nam suscipit leo condimentum justo bibendum bibendum.
-  </p>
-  <p>
-    Cras eu sollicitudin eros, a interdum erat. Ut eu hendrerit orci. Praesent et lectus posuere, interdum sapien rutrum, varius massa. Vivamus vitae tempus enim. Nullam lacinia ipsum est, tempus convallis felis imperdiet in. In fringilla est mauris, nec vehicula arcu gravida ac. Nulla consequat pretium urna eget hendrerit.
-  </p>
-  <p>
-    Nulla sit amet tempor nisi, ut dapibus ipsum. Nulla facilisi. Quisque scelerisque quis neque ut condimentum. Vivamus dolor nunc, convallis sit amet sem vitae, ultricies malesuada sapien. Nulla tristique auctor ornare. Donec elementum non diam id malesuada. In leo neque, vehicula ac erat eget, congue maximus velit. Sed porttitor lacinia facilisis.
-  </p>
+  <%= @page.body.html_safe if @page %>
 </div>

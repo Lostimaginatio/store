@@ -54,5 +54,7 @@ gem 'spree', '~> 3.1.0'
 gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_gateway', '~> 3.1.0'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '3-1-stable'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: '3-1-stable'
 
 gem 'datagrid'
+gem 'bootstrap-wysihtml5-rails'

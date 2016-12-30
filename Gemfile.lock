@@ -10,6 +10,14 @@ GIT
       routing-filter (~> 0.5.0)
       spree_core (~> 3.1.0.beta)
 
+GIT
+  remote: git://github.com/spree-contrib/spree_static_content.git
+  revision: 5e8d9ba3ee047da114c71f9ea6a05408ea75b494
+  branch: 3-1-stable
+  specs:
+    spree_static_content (3.1.0)
+      spree_core (~> 3.1.0.beta)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -67,6 +75,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-wysihtml5-rails (0.3.3.8)
+      railties (>= 3.0)
     builder (3.2.2)
     byebug (9.0.6)
     camertron-eprun (1.1.1)
@@ -346,6 +356,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-wysihtml5-rails
   byebug
   coffee-rails (~> 4.1.0)
   datagrid
@@ -361,6 +372,7 @@ DEPENDENCIES
   spree_auth_devise (~> 3.1.0)
   spree_gateway (~> 3.1.0)
   spree_i18n!
+  spree_static_content!
   spring
   sqlite3
   turbolinks

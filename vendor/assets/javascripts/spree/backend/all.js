@@ -6,7 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-wysihtml5
 //= require spree/backend
-
 //= require_tree .
 //= require spree/backend/spree_i18n

@@ -1,5 +1,16 @@
+<%= @top_content.body.html_safe if @top_content %>
+
+<br><br>
+
+<h4>Категории товаров</h4>
+
 <div id="main-menu">
+
   <% @taxonomies.each do |taxonomy| %>
       <%= link_to taxonomy.name, seo_url(taxonomy.root), class: 'main-menu-item' %>
   <% end %>
 </div>
+
+<br><br>
+
+<%= @bottom_content.body.html_safe if @bottom_content %>
