@@ -28,7 +28,8 @@ Spree::OrdersController.class_eval do
       flash[:error] = error
       redirect_back_or_default(spree.root_path)
     else
-      render :json => order
+      # render :json => order
+      redirect_back_or_default(spree.root_path)
     end
   end
 
