@@ -8,18 +8,15 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
           # The priority is based upon order of creation: first created -> highest priority.
 
-  # Spree::Core::Engine.routes.prepend do
-  #   get '/about_us', :to => 'static_pages#about', as: :about_us
-  #   get '/info', :to => 'static_pages#info', as: :info
-  #   get '/contacts', :to => 'static_pages#contacts', as: :contacts
-  # end
+  Spree::Core::Engine.routes.prepend do
+    get '/about_us', :to => 'static_pages#about', as: :about_us
+    get '/delivery', :to => 'static_pages#delivery', as: :delivery
+    get '/contacts', :to => 'static_pages#contacts', as: :contacts
+  end
 
   Spree::Core::Engine.routes.append do
     # match 'some-path' => 'some-controller#show', :as => :some_routename
     # get '/other-path' => 'other-controller#new', :as => :other_routename
-    get '/about_us', :to => 'static_pages#about', as: :about_us
-    get '/delivery', :to => 'static_pages#delivery', as: :delivery
-    get '/contacts', :to => 'static_pages#contacts', as: :contacts
     post '/ajax/order_items', :to => 'ajax#order_items'
     post '/ajax/update_item', :to => 'ajax#update'
     post '/ajax/add_item', :to => 'ajax#populate'
