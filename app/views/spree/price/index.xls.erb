@@ -1,0 +1,41 @@
+<% headers["Content-Disposition"] = "attachment; filename=\"price-#{Date.today}.xls\"" %>
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+
+  <% @taxons.each do |taxon| %>
+
+    <Worksheet ss:Name="<%= taxon.name %>">
+
+      <% products = taxon.products %>
+
+      <Table>
+        <Row>
+          <Cell><Data ss:Type="String">№</Data></Cell>
+          <Cell><Data ss:Type="String">Артикул</Data></Cell>
+          <Cell><Data ss:Type="String">Наименование товара</Data></Cell>
+          <Cell><Data ss:Type="String">Цена (руб.)</Data></Cell>
+        </Row>
+        <% counter = 0 %>
+        <% products.each do |product| %>
+            <%
+              if product.available? && product.total_on_hand > 0
+              counter+=1
+            %>
+            <Row>
+              <Cell><Data ss:Type="Number"><%= counter %></Data></Cell>
+              <Cell><Data ss:Type="Number"><%= product.sku %></Data></Cell>
+              <Cell><Data ss:Type="String"><%= product.name %></Data></Cell>
+              <Cell><Data ss:Type="Number"><%= product.price %></Data></Cell>
+            </Row>
+            <% end %>
+        <% end %>
+      </Table>
+    </Worksheet>
+
+  <% end %>
+
+</Workbook>

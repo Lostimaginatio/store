@@ -7,12 +7,13 @@ Rails.application.routes.draw do
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
   mount Spree::Core::Engine, at: '/'
           # The priority is based upon order of creation: first created -> highest priority.
-
-  Spree::Core::Engine.routes.prepend do
-    get '/about_us', :to => 'static_pages#about', as: :about_us
-    get '/delivery', :to => 'static_pages#delivery', as: :delivery
-    get '/contacts', :to => 'static_pages#contacts', as: :contacts
-  end
+  #
+  # Spree::Core::Engine.routes.prepend do
+  #   get '/about_us', :to => 'static_pages#about', as: :about_us
+  #   get '/delivery', :to => 'static_pages#delivery', as: :delivery
+  #   get '/contacts', :to => 'static_pages#contacts', as: :contacts
+  #   get '/price', :to => 'price#index', as: :price
+  # end
 
   Spree::Core::Engine.routes.append do
     # match 'some-path' => 'some-controller#show', :as => :some_routename
@@ -20,6 +21,11 @@ Rails.application.routes.draw do
     post '/ajax/order_items', :to => 'ajax#order_items'
     post '/ajax/update_item', :to => 'ajax#update'
     post '/ajax/add_item', :to => 'ajax#populate'
+
+    get '/about_us', :to => 'static_pages#about', as: :about_us
+    get '/delivery', :to => 'static_pages#delivery', as: :delivery
+    get '/contacts', :to => 'static_pages#contacts', as: :contacts
+    get '/price', :to => 'price#index', as: :price
   end
 
   # See how all your routes lay out with "rake routes".
