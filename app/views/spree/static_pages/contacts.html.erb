@@ -5,14 +5,14 @@
   ymaps.ready(init);
   function init () {
     myMap = new ymaps.Map('map', {
-      center:[48.715377, 44.522161],
-      zoom:10
+      center:[48.727742, 44.491787],
+      zoom:14
     });
     myMap.controls
         .add('zoomControl', { left: 5, top: 5 })
         .add('typeSelector')
         .add('mapTools', { left: 35, top: 5 });
-    myMap.geoObjects.add(new ymaps.Placemark([48.715377, 44.522161], {
+    myMap.geoObjects.add(new ymaps.Placemark([48.727742, 44.491787], {
       balloonContent: 'ООО "Бетар-волга", главный офис'
     }));
   }
