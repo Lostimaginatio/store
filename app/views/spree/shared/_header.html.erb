@@ -1,54 +1,79 @@
 <div id="spree-header">
   <header id="header" data-hook>
     <div class="container">
-      <div class="row">
-        <figure id="logo" class="col-md-2">
-          <%=logo%>
-          <span class="company-name">Бетар-Волга</span>
-        </figure>
 
-        <nav class="col-md-6">
-          <div id="main-nav-bar" class="navbar">
-            <ul class="nav navbar-nav" data-hook>
-              <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
-              <li id="about-link" data-hook><%= link_to Spree.t(:about), '/about_us' %></li>
-              <li id="about-link" data-hook><%= link_to Spree.t(:delivery), '/delivery' %></li>
-              <li id="about-link" data-hook><%= link_to Spree.t(:contacts), '/contacts' %></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" data-hook>
-              <li id="link-to-cart" data-hook>
-                <%= link_to Spree.t(:cart), '/cart', :class => 'cart-info' %>
-                &nbsp;
-              </li>
-              <script>
+      <div class="row">
+        <div class="col-md-2">
+          <figure id="logo">
+            <%=logo%>
+            <span class="company-name">Бетар-Волга</span>
+          </figure>
+        </div>
+
+        <div class="col-md-7 col-sm-12">
+          <nav>
+            <div id="main-nav-bar" class="navbar">
+              <ul class="nav navbar-nav" data-hook>
+                <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+                <li id="about-link" data-hook><%= link_to Spree.t(:about), '/about_us' %></li>
+                <li id="about-link" data-hook><%= link_to Spree.t(:delivery), '/delivery' %></li>
+                <li id="about-link" data-hook><%= link_to Spree.t(:contacts), '/contacts' %></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <ul class="row cart-wrap nav navbar-nav" data-hook>
+            <li id="link-to-cart" data-hook>
+              <%= link_to Spree.t(:cart), '/cart', :class => 'cart-info' %>
+              &nbsp;
+            </li>
+            <script>
                 $(function(){
-                  if ($('.datagrid').length == 0) Spree.fetch_cart()
+                    if ($('.datagrid').length == 0) Spree.fetch_cart()
                 });
-              </script>
-            </ul>
-          </div>
-        </nav>
-        <div class="col-md-4">
-            <div class="row company-phone">8 8442 60-04-84</div>
-            <div class="row auth-info">
-              <% if spree_current_user %>
+            </script>
+          </ul>
+
+          <div class="row auth-info">
+            <% if spree_current_user %>
                   <span>
                     <%= link_to Spree.t(:account), account_path %>
                   </span>
-                  <span>
+                <span>
                     <%= link_to Spree.t(:logout), spree_logout_path%>
                   </span>
-              <% else %>
+            <% else %>
                   <span>
                     <%= link_to Spree.t(:login), spree_login_path %>
                   </span>
-                  <span>
+                <span>
                     <%= link_to Spree.t(:signup), spree_signup_path %>
                   </span>
-              <% end %>
-            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6 col-sm-12">
+          <div class="company-phone">
+            8 8442 60-04-84
+          </div>
+          <div class="search-wrap">
+            <%= render :partial => 'spree/shared/search' %>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
 </div>
+
+
+
