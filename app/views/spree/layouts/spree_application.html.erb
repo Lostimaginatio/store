@@ -14,9 +14,7 @@
       <div class="row" data-hook>
         <%= breadcrumbs(@taxon) %>
 
-        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
-
-        <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
+        <div id="content" class="col-sm-12" data-hook>
           <%= flash_messages %>
           <%= yield %>
         </div>
@@ -30,7 +28,7 @@
           <div class="col-sm-3 company-copyright">
             <p>&copy; ООО "Бетар-Волга" 2012-<%= Time.now.year %></p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-sm-offset-5">
             <p>Бесплатный звонок по России</p>
             <p class="company-phone">8 8442 60-04-84</p>
           </div>
