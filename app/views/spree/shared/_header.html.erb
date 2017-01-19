@@ -84,7 +84,7 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-6 col-sm-12">
           <div class="company-phone">
-            8 8442 60-04-84
+            <%= Spree::Store.current.phone_number %>
           </div>
           <div class="search-wrap">
             <%= render :partial => 'spree/shared/search' %>

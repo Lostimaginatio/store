@@ -5,14 +5,14 @@
   ymaps.ready(init);
   function init () {
     myMap = new ymaps.Map('map', {
-      center:[48.727742, 44.491787],
+      center:[<%= Spree::Store.current.latitude %>, <%= Spree::Store.current.longitude %>],
       zoom:14
     });
     myMap.controls
         .add('zoomControl', { left: 5, top: 5 })
         .add('typeSelector')
         .add('mapTools', { left: 35, top: 5 });
-    myMap.geoObjects.add(new ymaps.Placemark([48.727742, 44.491787], {
+    myMap.geoObjects.add(new ymaps.Placemark([<%= Spree::Store.current.latitude %>, <%= Spree::Store.current.longitude %>], {
       balloonContent: 'ООО "Бетар-волга", главный офис'
     }));
   }
