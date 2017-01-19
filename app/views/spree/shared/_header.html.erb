@@ -15,9 +15,29 @@
             <div id="main-nav-bar" class="navbar">
               <ul class="nav navbar-nav" data-hook>
                 <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
-                <li id="about-link" data-hook><%= link_to Spree.t(:about), '/about_us' %></li>
-                <li id="about-link" data-hook><%= link_to Spree.t(:delivery), '/delivery' %></li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О компании<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li id="about-link" data-hook><%= link_to 'Как мы работаем', '/how_we_work' %></li>
+                    <li id="about-link" data-hook><%= link_to 'Доставка', '/delivery' %></li>
+                    <li id="about-link" data-hook><%= link_to 'Самовывоз', '/pickup' %></li>
+                    <li id="about-link" data-hook><%= link_to 'Вакансии', '/vacancies' %></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Информация<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li id="about-link" data-hook><%= link_to 'О нас', '/about_us' %></li>
+                    <li id="about-link" data-hook><%= link_to 'Бренды', '/brands' %></li>
+                    <li id="about-link" data-hook><%= link_to 'Каталоги', '/catalogs' %></li>
+                    <li id="about-link" data-hook><%= link_to 'Сертификаты', '/certificates' %></li>
+                  </ul>
+                </li>
+
                 <li id="about-link" data-hook><%= link_to Spree.t(:contacts), '/contacts' %></li>
+
               </ul>
             </div>
           </nav>

@@ -55,13 +55,31 @@
                 </div>
               </div>
 
+            </div>
+
+            <div class="row">
               <div class="col-md-6">
-                <div class="form-group" data-hook="admin_general_setting_phone_numbere">
-                  <%= f.label :phone_field %>
-                  <%= f.text_field :phone, class: 'form-control'  %>
+                <div class="form-group" data-hook="admin_general_setting_phone_number">
+                  <%= f.label 'Телефонный номер' %>
+                  <%= f.text_field :phone_number, class: 'form-control'  %>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group" data-hook="admin_general_setting_latitude">
+                  <%= f.label 'Широта (для карт)' %>
+                  <%= f.text_field :latitude, class: 'form-control'  %>
                 </div>
               </div>
 
+              <div class="col-md-6">
+                <div class="form-group" data-hook="admin_general_setting_longitude">
+                  <%= f.label 'Долгота (для карт)' %>
+                  <%= f.text_field :longitude, class: 'form-control'  %>
+                </div>
+              </div>
             </div>
         <% end %>
 

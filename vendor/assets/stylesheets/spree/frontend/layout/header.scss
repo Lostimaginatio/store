@@ -65,6 +65,29 @@ header {
       float: right;
     }
   }
+
+  .dropdown-menu {
+
+    border: none !important;
+    box-shadow: none !important;
+    background: none;
+    &:first-of-type {
+      li {
+        @media screen and (min-width: 998px) {
+          width: 140px;
+          background: rgba(16, 23, 60, 0.09);
+        }
+      }
+    }
+    &:last-of-type {
+      li {
+        @media screen and (min-width: 998px) {
+          width: 150px;
+          background: rgba(16, 23, 60, 0.09);
+        }
+      }
+    }
+  }
 }
 
 .sub-header {
