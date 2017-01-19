@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    resources :articles
+  end
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
@@ -22,11 +25,20 @@ Rails.application.routes.draw do
     post '/ajax/update_item', :to => 'ajax#update'
     post '/ajax/add_item', :to => 'ajax#populate'
 
-    get '/about_us', :to => 'static_pages#about', as: :about_us
-    get '/delivery', :to => 'static_pages#delivery', as: :delivery
-    get '/contacts', :to => 'static_pages#contacts', as: :contacts
-    get '/price', :to => 'price#index', as: :price
+    get '/about_us', :to => 'static_pages#about'
+    get '/delivery', :to => 'static_pages#delivery'
+    get '/contacts', :to => 'static_pages#contacts'
+    get '/how_we_work', :to => 'static_pages#how_we_work'
+    get '/delivery', :to => 'static_pages#delivery'
+    get '/pickup', :to => 'static_pages#pickup'
+    get '/vacancies', :to => 'static_pages#vacancies'
+    get '/brands', :to => 'static_pages#brands'
+    get '/catalogs', :to => 'static_pages#catalogs'
+    get '/certificates', :to => 'static_pages#certificates'
+    get '/price', :to => 'price#index'
   end
+
+
 
   # See how all your routes lay out with "rake routes".
 

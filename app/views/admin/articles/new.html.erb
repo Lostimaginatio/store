@@ -1,0 +1,13 @@
+<% content_for :page_title do %>
+  <%= link_to 'Новости', admin_articles_url %> /
+  Создание новости
+<% end %>
+
+<%= render :partial => 'spree/admin/shared/error_messages', :locals => { :target => @article } %>
+
+<%= form_for [:admin, @article] do |f| %>
+  <fieldset>
+    <%= render partial: 'form', locals: { f: f } %>
+    <%= button 'Сохранить', 'save' %>
+  </fieldset>
+<% end %>

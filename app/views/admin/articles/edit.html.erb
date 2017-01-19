@@ -1,0 +1,11 @@
+<% content_for :page_title do %>
+  <%= link_to 'Новости', admin_articles_url %> /
+  <%= @article.name.capitalize %>
+<% end %>
+
+<%= form_for [:admin, @article] do |f| %>
+  <fieldset>
+    <%= render partial: 'form', locals: { f: f } %>
+    <%= button 'Сохранить', 'save' %>
+  </fieldset>
+<% end %>
