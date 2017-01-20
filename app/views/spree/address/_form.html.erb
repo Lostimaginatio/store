@@ -25,6 +25,9 @@
     <% end %>
     <%= form.text_field :address1, :class => 'form-control  required' %>
   </p>
+  <p class="form-group" id="pick_up">
+    <span><b>Савовывоз</b> </span><input type="checkbox" style="height: 20px; width: 20px; position: relative; top: 3px;">
+  </p>
   <p class="form-group" id=<%="#{address_id}phone" %>>
     <%= form.label :phone do %>
         <%= Spree.t(:phone) %><% if address.require_phone? %><% end %>
@@ -32,3 +35,15 @@
     <%= form.phone_field :phone, :class => "form-control #{'required' if address.require_phone?}" %>
   </p>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('#pick_up input[type="checkbox"]').change(function() {
+            if($(this).is(":checked")) {
+                $('#order_bill_address_attributes_address1').val('Самовывоз');
+            } else {
+                $('#order_bill_address_attributes_address1').val('');
+            }
+        });
+    })
+</script>
