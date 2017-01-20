@@ -1,0 +1,10 @@
+<div class="row article_wrap">
+  <h2 class="article_name"><%= @article.name %></h2>
+
+  <article>
+    <%= @article.content.html_safe %>
+  </article>
+
+  <a href="/articles" class="show_all">К списку статей</a>
+</div>
+

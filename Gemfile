@@ -59,3 +59,5 @@ gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch
 
 gem 'datagrid'
 gem 'bootstrap-wysihtml5-rails'
+gem 'kaminari'
+

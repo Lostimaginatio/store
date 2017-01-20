@@ -36,6 +36,8 @@ Rails.application.routes.draw do
     get '/catalogs', :to => 'static_pages#catalogs'
     get '/certificates', :to => 'static_pages#certificates'
     get '/price', :to => 'price#index'
+    get '/articles', :to => 'articles#index'
+    get '/articles/:id', :to => 'articles#show'
   end
 
 

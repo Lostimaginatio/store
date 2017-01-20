@@ -1,0 +1,15 @@
+<div class="row articles_wrap">
+
+  <h1>Статьи</h1>
+
+  <% @articles.each do |article| %>
+      <div class="article">
+        <h2><a href="/articles/<%= article.id %>"><%= article.name %></a></h2>
+        <div class="artilce_preview">
+          <%= strip_tags article.content.split('.')[0].html_safe %>.
+        </div>
+      </div>
+  <% end %>
+
+  <%= paginate @articles %>
+</div>

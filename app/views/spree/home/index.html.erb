@@ -1,8 +1,8 @@
 <%= @top_content.body.html_safe if @top_content %>
 
-<br><br>
+<br>
 
-<h4>Категории товаров</h4>
+<h3>Категории товаров</h3>
 
 <div id="main-menu">
 
@@ -11,6 +11,22 @@
   <% end %>
 </div>
 
-<br><br>
+<br>
+
+<h3>Последние статьи</h3>
+
+<div class="articles_wrap">
+
+  <% @articles.each do |article| %>
+      <div class="article">
+        <h2><a href="/articles/<%= article.id %>"><%= article.name %></a></h2>
+        <div class="artilce_preview">
+          <%= strip_tags article.content.split('.')[0].html_safe %>.
+        </div>
+      </div>
+  <% end %>
+
+</div>
+
 
 <%= @bottom_content.body.html_safe if @bottom_content %>
