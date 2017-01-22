@@ -8,5 +8,3 @@
  *= require spree/frontend/spree_static_content
  *= require_self
  *= require_tree .
-
-*/
