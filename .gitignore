@@ -19,3 +19,4 @@
 .ruby-gemset
 .ruby-version
 public/spree/products/
+public/assets/*
