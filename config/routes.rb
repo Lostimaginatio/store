@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :articles
-    resources :sales
   end
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
@@ -39,8 +38,8 @@ Rails.application.routes.draw do
     get '/price', :to => 'price#index'
     get '/articles', :to => 'articles#index'
     get '/articles/:id', :to => 'articles#show'
-    get '/sales', :to => 'sales#index'
-    get '/sales/:id', :to => 'sales#show'
+    get '/promotions', :to => 'promotions#index'
+    get '/promotions/:id', :to => 'promotions#show'
   end
 
   # See how all your routes lay out with "rake routes".
@@ -71,14 +70,14 @@ Rails.application.routes.draw do
 
   # Example resource route with sub-resources:
   #   resources :products do
-  #     resources :comments, :sales
+  #     resources :comments, :promotions
   #     resource :seller
   #   end
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
-  #     resources :sales do
+  #     resources :promotions do
   #       get 'recent', on: :collection
   #     end
   #   end

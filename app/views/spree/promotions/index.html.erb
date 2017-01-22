@@ -1,0 +1,15 @@
+<div class="row promotions_wrap">
+
+  <h1>Акции</h1>
+
+  <% @promotions.each do |promotion| %>
+      <div class="sale">
+        <h2><a href="/promotions/<%= promotion.id %>"><%= promotion.name %></a></h2>
+        <div class="artilce_preview">
+          <%= strip_tags promotion.description.split('.')[0].html_safe %>.
+        </div>
+      </div>
+  <% end %>
+
+  <%= paginate @promotions %>
+</div>

@@ -1,0 +1,11 @@
+<div class="row promotion_wrap">
+  <h2 class="sale_name"><%= @promotion.name %></h2>
+  <h3><span class="label label-info"><%= @promotion.promotion_category.name %></span></h3>
+  <br>
+  <article>
+    <%= @promotion.description.html_safe %>
+  </article>
+
+  <a href="/promotions" class="show_all">К списку акций</a>
+</div>
+

@@ -21,7 +21,7 @@
       <div class="article">
         <h2><a href="/articles/<%= article.id %>"><%= article.name %></a></h2>
         <div class="article_preview">
-          <%= strip_tags article.content.split('.')[0].html_safe %>.
+          <%= strip_tags article.content.split('.')[0].html_safe %>
         </div>
       </div>
   <% end %>
@@ -34,11 +34,11 @@
 
 <div class="sales_wrap">
 
-  <% @sales.each do |sale| %>
+  <% @promotions.each do |action| %>
       <div class="sale">
-        <h2><a href="/sales/<%= sale.id %>"><%= sale.name %></a></h2>
+        <h2><a href="/promotions/<%= action.id %>"><%= action.name %></a></h2>
         <div class="sale_preview">
-          <%= strip_tags sale.content.split('.')[0].html_safe %>.
+          <%= strip_tags action.description.split('.')[0].html_safe %>
         </div>
       </div>
   <% end %>

@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20170119163951) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
 
-  create_table "sales", force: :cascade do |t|
+  create_table "promotions", force: :cascade do |t|
     t.string   "name"
     t.text     "content"
     t.datetime "created_at", null: false
