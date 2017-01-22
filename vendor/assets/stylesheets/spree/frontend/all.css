@@ -5,7 +5,7 @@
  *
  *= require spree/frontend
  *= require font-awesome
+ *= require spree/frontend/spree_static_content
  *= require_self
  *= require_tree .
- *= require spree/frontend/spree_static_content
 */
